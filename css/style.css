@@ -1,0 +1,319 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Classi riutilizzabili */
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.float-left{
+  float: left;
+}
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Button */
+.btn{
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.btn-green{
+  background-color: #7cbb02;
+}
+
+.btn-blue{
+  border: 1px solid white;
+  padding: 10px 40px;
+}
+
+.btn-large{
+  background-color: #7cbb02;
+  padding: 20px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+
+/* Header */
+header{
+  background-color: #0d325a;
+  background-image: url('../img/background-header.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 110% 115%;
+  color: white;
+}
+
+.header-nav{
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 70px;
+}
+
+.header-nav li{
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.header-left{
+  width: 12%;
+  height: 80px;
+}
+
+.header-left img{
+  margin-top: 18px;
+}
+
+.header-center{
+  width: 48%;
+  height: 80px;
+  text-align: left;
+}
+
+.header-right{
+  width: 40%;
+  height: 80px;
+  text-align: right;
+}
+
+/* Jumbotron */
+.jumbotron{
+  height: 450px;
+  position: relative;
+}
+
+.jumbotron-text{
+  position: absolute;
+  width: 42%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.jumbotron-text h1{
+  font-size: 54px;
+  margin-bottom: 60px;
+}
+
+/* Corpo principale */
+main{
+  width: 100%;
+}
+
+.text-short{
+  height: 150px;
+  background-color: lightgrey;
+  position: relative;
+}
+
+.text-short-middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2.2;
+  text-align: center;
+}
+
+.text-short-middle h2{
+  font-size: 28px;
+}
+
+.text-short-middle p{
+  font-size: 20px;
+  color: grey;
+}
+
+/* Section top */
+/* Box left */
+.sec-top .box-left{
+  width: calc(100% / 3);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.box-left .img-left img{
+  width: 30%;
+  margin: 30px 0;
+}
+
+.box-left .img-left h3{
+  color: #7cbb02;
+  font-size: 28px;
+  margin: 0 50px;
+}
+
+.box-left .img-left hr{
+  width: 20%;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.box-left .img-left p{
+  margin: 30px;
+}
+
+/* Box center */
+.sec-top .box-center{
+  width: calc(100% / 3);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.box-center .img-center img{
+  width: 52%;
+  margin: 30px 0;
+}
+
+.box-center .img-center h3{
+  color: #7cbb02;
+  font-size: 28px;
+  margin: 0 50px;
+}
+
+.box-center .img-center hr{
+  width: 20%;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.box-center .img-center p{
+  margin: 30px;
+}
+
+/* Box right */
+.sec-top .box-right{
+  width: calc(100% / 3);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.box-right .img-right img{
+  width: 35%;
+  margin: 30px 0;
+}
+
+.box-right .img-right h3{
+  color: #7cbb02;
+  font-size: 28px;
+  margin: 0 50px;
+}
+
+.box-right .img-right hr{
+  width: 20%;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.box-right .img-right p{
+  margin: 30px;
+}
+
+.riga{
+  width: 100%;
+  color: lightgrey;
+}
+
+/* Section center */
+.img-left-mountain{
+  width: calc(100% / 2);
+}
+
+.img-left-mountain img{
+  margin: 5% 25%;
+}
+
+.sec-center .text-right{
+  width: calc(100% / 2);
+  text-align: left;
+}
+
+.sec-center .text-right a{
+  text-decoration: underline;
+  text-transform: none;
+  color: blue;
+  font-size: 14px;
+}
+
+.text-right-img{
+  margin-top: 5%;
+  margin-right: 20%;
+}
+
+.text-right-img h2{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-right-img p{
+  margin-bottom: 20px;
+}
+
+/* Section bottom */
+.sec-bottom .sec-bottom-text{
+  height: 150px;
+  line-height: 150px;
+  width: calc(100% / 2);
+  text-align: left;
+  background-color: lightgrey;
+}
+
+.sec-bottom-text h2{
+  padding-left: 10%;
+  font-size: 36px;
+}
+
+.sec-bottom .sec-bottom-nav{
+  height: 150px;
+  line-height: 150px;
+  width: calc(100% / 2);
+  background-color: lightgrey;
+  text-align: right;
+  padding-right: 5%;
+}
+
+span{
+  color: grey;
+  font-size: 20px;
+}
+
+.selection{
+  width: 25%;
+  height: 50px;
+  font-size: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+  background-color: lightgrey;
+  border: none;
+  border-bottom: 2px solid grey;
+  color: grey;
+  padding: 10px;
+  appearance: none;
+}
+
+/* Help */
+.help{
+  position: fixed;
+  bottom: 0;
+  right: 13%;
+}
